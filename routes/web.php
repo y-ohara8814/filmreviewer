@@ -11,6 +11,4 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/film/myreview/{id}', 'ReviewController@index')->name('reviews.index');
